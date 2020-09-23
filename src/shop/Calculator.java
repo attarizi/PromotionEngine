@@ -28,4 +28,16 @@ public class Calculator {
 	public int getCountOfD() {
 		return countOfD;
 	}
+
+	public int getCountOfCandD() {
+		return Math.min(countOfC, countOfD);
+	}
+
+	public int getCountOf3A() {
+		return (countOfA / 3);
+	}
+
+	public int getCountOf2B() {
+		return (countOfB / 2);
+	}
 }
