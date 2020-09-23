@@ -1,6 +1,15 @@
 package shop;
 
 public class Calculator {
+	// Avoid magic numbers
+	private final int priceOfA = 50;
+	private final int priceOf3A = 130;
+	private final int priceOfB = 30;
+	private final int priceOf2B = 45;
+	private final int priceOfC = 20;
+	private final int priceOfD = 15;
+	private final int priceOfCandD = 30;
+
 	private int countOfA;
 	private int countOfB;
 	private int countOfC;
@@ -55,5 +64,11 @@ public class Calculator {
 
 	public int getCountOfAloneD() {
 		return countOfD - getCountOfCandD();
+	}
+
+	public int calc() {
+		return getCountOfAloneA() * priceOfA + getCountOf3A() * priceOf3A + getCountOfAloneB() * priceOfB
+				+ getCountOf2B() * priceOf2B + getCountOfCandD() * priceOfCandD + getCountOfAloneC() * priceOfC
+				+ getCountOfAloneD() * priceOfD;
 	}
 }

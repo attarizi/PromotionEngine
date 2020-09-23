@@ -39,4 +39,22 @@ public class CalculatorTest {
 		assertEquals(calculator.getCountOfAloneD(), 1);
 	}
 
+	@Test
+	public void calculator_calc_test_scenarioA() {
+		Calculator calculator = new Calculator(1, 1, 1, 0);
+		assertEquals(calculator.calc(), 100);
+	}
+
+	@Test
+	public void calculator_calc_test_scenarioB() {
+		Calculator calculator = new Calculator(5, 5, 1, 0);
+		assertEquals(calculator.calc(), 370);
+	}
+
+	@Test
+	public void calculator_calc_test_scenarioC() {
+		Calculator calculator = new Calculator(3, 5, 1, 1);
+		assertEquals(calculator.calc(), 280);
+	}
+
 }
