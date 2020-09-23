@@ -24,21 +24,9 @@ public class Parser {
 	}
 
 	private void parse(String input) {
-		for (char a : input.toCharArray()) {
-			switch (a) {
-			case 'A':
-				countOfA++;
-				break;
-			case 'B':
-				countOfB++;
-				break;
-			case 'C':
-				countOfC++;
-				break;
-			case 'D':
-				countOfD++;
-				break;
-			}
-		}
+		countOfA = (int) input.chars().filter(ch -> ch == 'A').count();
+		countOfB = (int) input.chars().filter(ch -> ch == 'B').count();
+		countOfC = (int) input.chars().filter(ch -> ch == 'C').count();
+		countOfD = (int) input.chars().filter(ch -> ch == 'D').count();
 	}
 }
