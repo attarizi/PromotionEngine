@@ -1,29 +1,45 @@
 package shop;
 
 public class Parser {
+	private int countOfA = 0, countOfB = 0, countOfC = 0, countOfD = 0;
 
-	public Parser(String string) {
-		// TODO Auto-generated constructor stub
+	public Parser(String input) {
+		parse(input);
 	}
 
 	public int getCountOfA() {
-		// TODO Auto-generated method stub
-		return 0;
+		return countOfA;
 	}
 
 	public int getCountOfB() {
-		// TODO Auto-generated method stub
-		return 0;
+		return countOfB;
 	}
 
 	public int getCountOfC() {
-		// TODO Auto-generated method stub
-		return 0;
+		return countOfC;
 	}
 
 	public int getCountOfD() {
-		// TODO Auto-generated method stub
-		return 0;
+		return countOfD;
+	}
+
+	private void parse(String input) {
+		for (char a : input.toCharArray()) {
+			switch (a) {
+			case 'A':
+				countOfA++;
+				break;
+			case 'B':
+				countOfB++;
+				break;
+			case 'C':
+				countOfC++;
+				break;
+			case 'D':
+				countOfD++;
+				break;
+			}
+		}
 	}
 
 }
