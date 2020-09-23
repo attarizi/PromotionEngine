@@ -28,10 +28,4 @@ public class ParserTest {
 		assertEquals(parser2.getCountOfD(), 1);
 	}
 
-	@Test
-	public void create_calculator_test() {
-		Calculator calculator = new Calculator(5, 5, 5, 5);
-		assertNotNull(calculator);
-	}
-
 }
