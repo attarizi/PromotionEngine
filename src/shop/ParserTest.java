@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ParserTest {
 
 	@Test
-	public void create_test() {
+	public void create_parser_test() {
 		Parser parser = new Parser("");
 		assertNotNull(parser);
 	}
