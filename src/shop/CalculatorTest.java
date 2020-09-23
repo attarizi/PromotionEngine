@@ -58,9 +58,24 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void calculator_calc_test_print() {
+	public void calculator_calc_test_print__scenarioA() {
+		Calculator calculator = new Calculator(1, 1, 1, 0);
+		assertEquals(calculator.printResult(),
+				"(130 * 0) + (50 * 1) + (45 * 0) + (30 * 1) + (30 * 0) + (20 * 1) + (15 * 0) = 100");
+	}
+
+	@Test
+	public void calculator_calc_test_print__scenarioB() {
+		Calculator calculator = new Calculator(3, 5, 1, 0);
+		assertEquals(calculator.printResult(),
+				"(130 * 1) + (50 * 0) + (45 * 2) + (30 * 1) + (30 * 0) + (20 * 1) + (15 * 0) = 270");
+	}
+
+	@Test
+	public void calculator_calc_test_print__scenarioC() {
 		Calculator calculator = new Calculator(3, 5, 1, 1);
 		assertEquals(calculator.printResult(),
 				"(130 * 1) + (50 * 0) + (45 * 2) + (30 * 1) + (30 * 1) + (20 * 0) + (15 * 0) = 280");
 	}
+
 }
