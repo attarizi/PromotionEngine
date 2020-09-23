@@ -1,14 +1,15 @@
 package shop;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 public class ParserTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void create_test() {
+		Parser parser = new Parser();
+		assertNotNull(parser);
 	}
 
 }
