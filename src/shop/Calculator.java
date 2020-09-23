@@ -40,4 +40,20 @@ public class Calculator {
 	public int getCountOf2B() {
 		return (countOfB / 2);
 	}
+
+	public int getCountOfAloneA() {
+		return (countOfA % 3);
+	}
+
+	public int getCountOfAloneB() {
+		return (countOfB % 2);
+	}
+
+	public int getCountOfAloneC() {
+		return countOfC - getCountOfCandD();
+	}
+
+	public int getCountOfAloneD() {
+		return countOfD - getCountOfCandD();
+	}
 }

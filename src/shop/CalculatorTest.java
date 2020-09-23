@@ -30,4 +30,13 @@ public class CalculatorTest {
 		assertEquals(calculator.getCountOfCandD(), 3);
 	}
 
+	@Test
+	public void calculator_Alone_test() {
+		Calculator calculator = new Calculator(7, 5, 3, 4);
+		assertEquals(calculator.getCountOfAloneA(), 1);
+		assertEquals(calculator.getCountOfAloneB(), 1);
+		assertEquals(calculator.getCountOfAloneC(), 0);
+		assertEquals(calculator.getCountOfAloneD(), 1);
+	}
+
 }
