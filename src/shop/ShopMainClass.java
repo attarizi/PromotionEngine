@@ -6,7 +6,7 @@ public class ShopMainClass {
 		Parser parser = new Parser(args[0]);
 		Calculator calculator = new Calculator(parser.getCountOfA(), parser.getCountOfB(), parser.getCountOfC(),
 				parser.getCountOfD());
-		System.out.println(calculator.calc());
+		System.out.println(calculator.printResult());
 
 	}
 
