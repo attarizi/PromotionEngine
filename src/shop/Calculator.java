@@ -71,4 +71,47 @@ public class Calculator {
 				+ getCountOf2B() * priceOf2B + getCountOfCandD() * priceOfCandD + getCountOfAloneC() * priceOfC
 				+ getCountOfAloneD() * priceOfD;
 	}
+
+	public String printResult() {
+		StringBuilder sb = new StringBuilder("");
+		sb.append(priceOf3A);
+		sb.append(" * ");
+		sb.append(getCountOf3A());
+		sb.append(" + ");
+
+		sb.append(priceOfA);
+		sb.append(" * ");
+		sb.append(getCountOfAloneA());
+		sb.append(" + ");
+
+		sb.append(priceOf2B);
+		sb.append(" * ");
+		sb.append(getCountOf2B());
+		sb.append(" + ");
+
+		sb.append(priceOfB);
+		sb.append(" * ");
+		sb.append(getCountOfAloneB());
+		sb.append(" + ");
+
+		sb.append(priceOfCandD);
+		sb.append(" * ");
+		sb.append(getCountOfCandD());
+		sb.append(" + ");
+
+		sb.append(priceOfC);
+		sb.append(" * ");
+		sb.append(getCountOfAloneC());
+		sb.append(" + ");
+
+		sb.append(priceOfD);
+		sb.append(" * ");
+		sb.append(getCountOfAloneD());
+		sb.append(" = ");
+
+		sb.append(calc());
+
+		return sb.toString();
+
+	}
 }
