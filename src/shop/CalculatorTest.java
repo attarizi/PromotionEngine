@@ -60,6 +60,7 @@ public class CalculatorTest {
 	@Test
 	public void calculator_calc_test_print() {
 		Calculator calculator = new Calculator(3, 5, 1, 1);
-		assertEquals(calculator.printResult(), "130 * 1 + 50 * 0 + 45 * 2 + 30 * 1 + 30 * 1 + 20 * 0 + 15 * 0 = 280");
+		assertEquals(calculator.printResult(),
+				"(130 * 1) + (50 * 0) + (45 * 2) + (30 * 1) + (30 * 1) + (20 * 0) + (15 * 0) = 280");
 	}
 }
