@@ -57,4 +57,9 @@ public class CalculatorTest {
 		assertEquals(calculator.calc(), 280);
 	}
 
+	@Test
+	public void calculator_calc_test_print() {
+		Calculator calculator = new Calculator(3, 5, 1, 1);
+		assertEquals(calculator.printResult(), "");
+	}
 }
